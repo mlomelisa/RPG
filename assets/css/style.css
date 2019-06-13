@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Main Styling */
+html,body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+/* Utility Classes */
+.container {
+  margin: 0;
+  max-width: 1190px;
+  overflow: auto;
+  padding: 0;
+ 
+}
+.showcase {
+  background: url('../images/WalpBright-2.png') no-repeat center center/cover;
+  height: 600px;
+  max-width: 100%;
+  margin: 0;
+}
+@media (max-width: 640px)
+.jumbotron {
+
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+  margin: 0;
+}
+
+.card {
+  width: 150px;
+  margin-top: 2rem;
+  margin-right: 0;
+  display: inline-block;
+}
+.card-body {
+  padding: 2px;
+}
