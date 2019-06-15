@@ -37,13 +37,19 @@ html,body {
 
 .card {
   width: 150px;
+ 
   margin-top: 2rem;
   margin-right: 0;
   display: inline-block;
+  margin-top: 50px;
 }
 .card-body {
   padding: 2px;
 }
 h3  {
-  font-size: 1.2em;
+  font-size: 1em;
+}
+
+.btn-attack {
+  margin: 40px;
 }
