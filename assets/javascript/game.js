@@ -2,15 +2,15 @@ $(document).ready(function() {
 
   var playerChosen = false;
   var oponentChosen = false;
-  var attacked = false;
+  var attackBttn = false;
   var playerHealth;
   var oponentHealth;
   var playerIndex;
   var oponentIndex;
   var playerDamage;
-  var oponenDamege;
+  var oponentDamage;
   var playerDamageCh;
-  var oponenDamegeCh; 
+  var oponentDamageCh; 
 
    
 
@@ -79,7 +79,11 @@ $(document).ready(function() {
         
     if(!oponentChosen) { // Chose oponent, verify no already chosen
      
-     attackButton();
+     if (!attackBttn) {
+      attackButton();
+      attackBttn = true;
+     }
+     
      $('#sectionTwo').append(cardcharSe);
      oponentChosen = true;
      $('.titleSecOne').text('Click "Attack" button to start the fight');
@@ -122,6 +126,7 @@ $(document).ready(function() {
        function newOponent () {
         $('#sectionTwo > .oponent').remove();
         oponentChosen = false;
+        $('.titleSecOne').text('Choose an Oponent');
 
 
         console.log('is comming here');
@@ -173,8 +178,9 @@ $(document).ready(function() {
             if (oponentHealth > 0) {
               setTimeout( oponentAttack, 1000);
             } else {
+             
+              $('.titleSecOne').text('Oponent Defeated!!!');
               newOponent();
-              return $('.titleSecOne').text('Oponent Defeated!!!');
               
               }              
           
