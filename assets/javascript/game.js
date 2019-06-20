@@ -21,7 +21,7 @@ $(document).ready(function() {
     countD = {
       name:"Count Dooku",
       health: 500,
-      damage: 40,
+      damage: 20,
       damageChange: 10,
       missChange: 30,
       image: "./assets/images/CountDooku-2.png"},
