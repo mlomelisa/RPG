@@ -12,17 +12,18 @@ html,body {
 /* Utility Classes */
 .container {
   margin: 0;
-  max-width: 1190px;
+  max-width: 100%;
   max-height: 1190px;
   overflow: auto;
   padding: 0;
  
 }
 .showcase {
-  background: url('../images/WalpBright-2.png') no-repeat center center/cover;
+  background: url('../images/WalpBright-2.png') repeat center center/cover;
   height: 960px;
-  max-width: 2110px;
+  width: 2110px;
   margin: 0;
+  align-items: center;
 }
 @media (max-width: 640px)
 .jumbotron {
@@ -36,15 +37,21 @@ html,body {
   margin: 0;
 }
 
+h2 {
+  text-align: left;
+  margin-left: 100px;
+}
 
 .card  {
   width: 150px;
-  margin-left: 20px;
+  margin-left: 100px;
   margin-top: 2rem;
   margin-right: 0;
   display: inline-block;
   margin-top: 30px;
   background-image: 20px;
+  align-items: center;
+  
 }
 .card .card-header {
   padding: 10px;
@@ -61,8 +68,24 @@ h3  {
   font-size: 1em;
 }
 
+.winTitle {
+  color: green;
+}
+
+.normalTitle {
+  color: black;
+}
+
+.loseTitle {
+  color: red;
+}
+
+.oponentDefeated {
+  color: yellowgreen;
+}
+
 .btn-attack {
-  margin: 40px;
+  margin-left: 100px;
 }
 
 .player {
