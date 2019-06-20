@@ -157,7 +157,7 @@ $('.btn-attack').unbind('click').click(function(event) {
                 $('.oponent > .card-body > .health').text('Health: ' + oponentHealth);
               
                 $('.titleSecOne').text( "" + characterArray[playerIndex].name + "" + ' attacked ' + characterArray[oponentIndex].name + ' with ' + playerDamage);
-                playerDamage += playerDamageCh;
+                // playerDamage += playerDamageCh;
                 $('.player > .card-body > .damage').text(' Damage: ' + playerDamage);
               
                 if (oponentHealth <= 0 ) {
