@@ -44,7 +44,7 @@ $(document).ready(function() {
     },
     darthM = {
       name:"Darth Maul",
-      health: 350,
+      health: 1000,
       damage: 80,
       damageChange: -10,
       missChange: 50,
