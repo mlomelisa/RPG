@@ -81,7 +81,7 @@ $(document).ready(function() {
       oponentChosen = false;
       if(oponentNum === 3){
         $('.titleSecOne').addClass('winTitle').text('You win the combat!!');
-        $('.jumbotron > .btn-attack').remove();
+        $('#sectionTwo > .btn-attack').remove();
       }else{
         $('.titleSecOne').text('Choose an Oponent');
         oponentIndex;
@@ -190,7 +190,7 @@ $('.btn-attack').unbind('click').click(function(event) {
               
               $('.titleSecOne').addClass('loseTitle').text('Game Over!!!');
               
-              $('.jumbotron > .btn-attack').remove();
+              $('#sectionTwo > .btn-attack').remove();
 
                 return false;
             } else {
@@ -206,7 +206,7 @@ $('.btn-attack').unbind('click').click(function(event) {
               if (playerHealth <= 0 ) {
                 console.log("4.1 PlayerHealth:" + playerHealth,"playerDamage" + playerDamage );
                 $('.titleSecOne').addClass('loseTitle').text('Game Over!!!');
-                $('.jumbotron > .btn-attack').remove();
+                $('#sectionTwo > .btn-attack').remove();
                 return false;
               } 
             }      
