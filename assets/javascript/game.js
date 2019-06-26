@@ -66,7 +66,7 @@ $(document).ready(function() {
  function attackButton () {
       var attackbtn = $('<button>');
       attackbtn.addClass("btn btn-danger btn-attack").text('Attack');
-      $('.jumbotron').append(attackbtn);
+      $('#sectionTwo').append(attackbtn);
       attackBttn = true;
   };
 
